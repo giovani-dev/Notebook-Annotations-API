@@ -14,7 +14,7 @@ from .model import Notebook
 
 router = APIRouter(
     prefix="/notebook",
-    tags=["annotation"],
+    tags=["notebook"],
 )
 notebook = Notebook()
 
