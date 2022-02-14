@@ -14,7 +14,7 @@ from .model import Annotation
 
 router = APIRouter(
     prefix="/annotation",
-    tags=["schedule"],
+    tags=["annotation"],
 )
 annotation = Annotation()
 
