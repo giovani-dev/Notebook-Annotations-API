@@ -25,7 +25,7 @@ class TestNotebookView:
             mock_notebook_get
     ):
         _get = await view.get(
-            annotation_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9"
+            notebook_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9"
         )
 
         mock_notebook_get.assert_called_once_with(
@@ -40,7 +40,7 @@ class TestNotebookView:
     ):
         body = Mock()
         _put = await view.put(
-            annotation_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9",
+            notebook_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9",
             body=body
         )
 
@@ -57,7 +57,7 @@ class TestNotebookView:
     ):
         body = Mock()
         _patch = await view.patch(
-            annotation_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9",
+            notebook_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9",
             body=body
         )
 
@@ -86,7 +86,7 @@ class TestNotebookView:
             mock_notebook_delete
     ):
         _list = await view.delete(
-            annotation_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9"
+            notebook_id="A502CE1EFF5696A67621D6368CFCA455FC3648F9"
         )
 
         mock_notebook_delete.assert_called_once_with("A502CE1EFF5696A67621D6368CFCA455FC3648F9")
